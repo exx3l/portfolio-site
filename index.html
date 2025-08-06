@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Atlantic Sky Airways</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -14,12 +15,15 @@
       font-family: 'Inter', sans-serif;
     }
     body {
-      background: linear-gradient(to bottom, #000, #1a1a1a);
+      background: url('https://chat.openai.com/cdn-cgi/imagedelivery/MIjKdQw6gbwc7pS5e7vG5A/2940ef40-bcd4-4401-8b64-45f41ce9de00/public') no-repeat center center fixed;
+      background-size: cover;
+      background-blend-mode: overlay;
+      background-color: rgba(0, 0, 30, 0.8);
       color: #fff;
       overflow-x: hidden;
     }
     nav {
-      background: #111;
+      background: rgba(0, 0, 50, 0.8);
       padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
@@ -36,63 +40,66 @@
       transition: color 0.3s;
     }
     nav a:hover {
-      color: #bbb;
+      color: #99ccff;
     }
     header {
       height: 100vh;
-      background: url('https://chat.openai.com/cdn-cgi/imagedelivery/MIjKdQw6gbwc7pS5e7vG5A/2940ef40-bcd4-4401-8b64-45f41ce9de00/public') no-repeat center center/cover;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
       padding: 2rem;
+      backdrop-filter: brightness(0.8);
     }
     header h1 {
       font-size: 4rem;
       font-weight: bold;
-      color: white;
-      text-shadow: 2px 2px 4px #000;
+      color: #ffffff;
+      text-shadow: 2px 2px 6px #000;
     }
     header p {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       margin-top: 1rem;
-      color: #eee;
+      color: #cce0ff;
       text-shadow: 1px 1px 3px #000;
     }
     .flights {
       padding: 4rem 2rem;
       max-width: 1000px;
       margin: 0 auto;
+      background: rgba(0, 0, 40, 0.85);
+      border-radius: 16px;
     }
     .flights h2 {
-      font-size: 2.2rem;
+      font-size: 2.5rem;
       margin-bottom: 2rem;
       text-align: center;
+      color: #99ccff;
     }
     .flight {
-      border: 1px solid #444;
+      border: 1px solid #334;
       border-radius: 12px;
       padding: 2rem;
       margin-bottom: 2rem;
-      background: #121212;
+      background: #111933;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .flight:hover {
       transform: translateY(-6px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     }
     .flight h3 {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       margin-bottom: 0.5rem;
+      color: #cce0ff;
     }
     .flight-details {
       font-size: 1rem;
       margin-bottom: 1rem;
-      color: #ccc;
     }
     .interested-btn {
-      background: #00ffff;
+      background: #99ccff;
       color: #000;
       border: none;
       padding: 0.6rem 1.2rem;
@@ -102,32 +109,33 @@
       transition: background 0.3s;
     }
     .interested-btn:hover {
-      background: #0ff;
+      background: #cce0ff;
     }
     .about {
-      background: #1a1a1a;
+      background: rgba(0, 0, 50, 0.8);
       padding: 4rem 2rem;
       text-align: center;
     }
     .about h2 {
       font-size: 2.5rem;
       margin-bottom: 1.5rem;
+      color: #99ccff;
     }
     .about p {
-      color: #bbb;
+      color: #ccc;
       max-width: 700px;
       margin: 0 auto;
       font-size: 1.1rem;
     }
     footer {
-      background: #111;
+      background: rgba(0, 0, 30, 0.9);
       padding: 2rem;
       text-align: center;
       font-size: 1rem;
       color: #aaa;
     }
     footer a {
-      color: #00ffff;
+      color: #99ccff;
       text-decoration: underline;
     }
   </style>
@@ -187,4 +195,5 @@
   </script>
 </body>
 </html>
+
 
